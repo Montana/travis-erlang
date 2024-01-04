@@ -1,0 +1,17 @@
+language: erlang
+dist: jammy
+sudo: false
+otp_release:
+  - "22.2"
+addons:
+  apt:
+    packages:
+      - uuid-dev
+install:
+  - wget https://github.com/erlang/rebar3/releases/download/3.14.1/rebar3
+  - chmod +x rebar3
+script:
+  - ./rebar3 --relvsn
+cache:
+  directories:
+    - _build
