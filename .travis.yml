@@ -1,6 +1,5 @@
 language: erlang
-dist: jammy
-sudo: false
+dist: xenial
 otp_release:
   - "22.2"
 addons:
