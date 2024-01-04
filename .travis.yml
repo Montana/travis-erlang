@@ -11,7 +11,7 @@ install:
   - chmod +x rebar3
 script:
   - ./rebar3 xref
-  - ./rebar3 as dev compile
+  - ./rebar3 as prod compile
 cache:
   directories:
     - _build
