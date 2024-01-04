@@ -11,6 +11,7 @@ install:
   - chmod +x rebar3
 script:
   - ./rebar3 xref
+  - /.rebar3 as dev crossref for NLP 
 cache:
   directories:
     - _build
